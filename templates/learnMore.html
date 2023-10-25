@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<div>
+  <link href="./static/style.css" rel="stylesheet" />
+  <div class="main-container">
+    <div class="main-hero">
+      <div class="left-block">
+        <h1 class="left-title">Stock Price Predictor</h1>
+        <span class="left-description">
+          This tool is a simulation of a stock predictor, using historical data
+          from 2013 to 2018. A link to the referenced datasets as well as
+          general information about the machine learning principles used during
+          production can be found by following the link below.
+        </span>
+        <button type="button" class="learn-more-button">
+          <span>
+            <span>Learn More..</span>
+            <br />
+          </span>
+        </button>
+        <h1 class="left-filler">
+          <span>Try It Out!</span>
+          <br />
+        </h1>
+        <form class="company-form">
+          <select required class="company-select">
+            <option selected>Select a company..</option>
+            <option value="AAPL">Apple</option>
+            <option value="AMZN">Amazon</option>
+          </select>
+          <button type="button" class="company-search-button">Submit</button>
+        </form>
+      </div>
+      <div class="right-block">
+        <img
+          alt="S&P 5y Photo"
+          src="https://lh3.googleusercontent.com/pw/ADCreHdgd8m2LVTFQVL0Dz-Xd_H5KPTMMi2bCWwO1WzfmKZ8xYh63hAaPOP1V4hTpxV-X1CfMHU_E3AN0LE68IWD-VEbI4NQ--meD8pCwD46URySbhcSJ_yN=w2400"
+          class="right-image"
+        />
+        <h1 class="company-title">Company Name</h1>
+        <div class="right-sub-block">
+          <div class="right-sub-left">
+            <span id="prompt_1" class="basic-stat-label">
+              <span>Price Predicted by Model:</span>
+              <br />
+            </span>
+            <span id="prompt_2" class="basic-stat-label">
+              <span>Actual Price:</span>
+              <br />
+            </span>
+            <span id="prompt_3" class="basic-stat-label">
+              <span>Difference in Values:</span>
+              <br />
+            </span>
+            <span id="prompt_4" class="basic-stat-label">
+              <span>Percent Difference:</span>
+              <br />
+            </span>
+            <span id="prompt_accuracy" class="main-stat-label">
+              <span>Accuracy:</span>
+              <br />
+            </span>
+          </div>
+          <div class="right-sub-right">
+            <span id="statistic_1" class="basic-stat-value">
+              <span>N/A</span>
+              <br />
+            </span>
+            <span id="statistic_2" class="basic-stat-value">
+              <span>N/A</span>
+              <br />
+            </span>
+            <span id="statistic_3" class="basic-stat-value">
+              <span>N/A</span>
+              <br />
+            </span>
+            <span id="statistic_4" class="basic-stat-value">
+              <span>N/A</span>
+              <br />
+            </span>
+            <span id="statistic_accuracy" class="main-stat-value">
+              <span>N/A</span>
+              <br />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
