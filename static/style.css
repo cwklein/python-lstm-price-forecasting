@@ -16,7 +16,7 @@
   max-width: var(--dl-size-size-maxwidth);
   min-height: 80vh;
   align-items: center;
-  padding-top: 48px;
+  padding-top: 10px;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   flex-direction: row;
@@ -24,21 +24,30 @@
   background-color: #b1cced;
 }
 .left-block {
-  width: 563px;
+  width: 463px;
+  height: 699px;
   display: flex;
   position: relative;
-  margin-left: var(--dl-space-space-twounits);
-  margin-right: var(--dl-space-space-threeunits);
-  padding-left: 0px;
+  align-items: center;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 2px;
   flex-direction: column;
+  justify-content: flex-start;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
 }
 .left-title {
-  width: 483px;
-  font-size: 5rem;
+  width: 463px - 2rem;
+  font-size: 4rem;
   max-width: auto;
   align-self: stretch;
   text-align: left;
   margin-left: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-color: #000000;
   border-width: 0px;
 }
@@ -47,11 +56,11 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 .learn-more-button {
   align-self: center;
   background-color: #e6e6e6;
-  margin-right: 1rem;
 }
 .left-filler {
   align-self: center;
@@ -87,7 +96,7 @@
   background-color: #e6e6e6;
 }
 .right-block {
-  width: 627px;
+  width: 727px;
   height: 699px;
   display: flex;
   position: relative;
@@ -104,7 +113,7 @@
 .right-image {
   width: 90%;
   height: auto;
-  margin-top: var(--dl-space-space-fourunits);
+  margin-top: 1rem;
   object-fit: cover;
 }
 .company-title {

@@ -1,13 +1,13 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
 {% block content %}
     <div class="right-block">
         <img
-          alt="S&P 5y Photo"
-          src='../static/all_lstm'
+          alt="5y Stock Price"
+          src= {{img_data}}
           class="right-image"
         />
-        <h1 class="company-title">{{companyName}} - Date</h1>
+        <h1 class="company-title">{{companyName}} - {{dateString}}</h1>
         <div class="right-sub-block">
           <div class="right-sub-left">
             <span id="prompt_1" class="basic-stat-label">
@@ -33,19 +33,19 @@
           </div>
           <div class="right-sub-right">
             <span id="statistic_1" class="basic-stat-value">
-              <span>N/A</span>
+              <span>${{ predictedString }}</span>
               <br />
             </span>
             <span id="statistic_2" class="basic-stat-value">
-              <span>N/A</span>
+              <span>${{ actualString }}</span>
               <br />
             </span>
             <span id="statistic_3" class="basic-stat-value">
-              <span>N/A</span>
+              <span>${{ diffString }}</span>
               <br />
             </span>
             <span id="statistic_4" class="basic-stat-value">
-              <span>N/A</span>
+              <span>{{ diffPercString }}%</span>
               <br />
             </span>
             <span id="statistic_accuracy" class="main-stat-value">
