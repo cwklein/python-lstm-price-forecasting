@@ -66,7 +66,7 @@ def lstmModelUpdate(company):
     # Prepare the figure
     fig = results.plot(figsize=(11.83,5.01), title=f'{company} - 2 Year Performance').get_figure()
     fig.patch.set_facecolor('white')
-    fig.patch.set_alpha(0.1)
+    fig.patch.set_alpha(0)
 
     # Save figure as png for web app
     fig.savefig(f'/home/ColbyKid/capstoneProject/static/{company}_lstm_final', format='png')
@@ -110,7 +110,7 @@ def lstmMainPage():
     # Prepare the figure
     fig = df_total.plot(figsize=(11.83,5.01), title='Sample Companies - 2 Year Performance').get_figure()
     fig.patch.set_facecolor('white')
-    fig.patch.set_alpha(0.1)
+    fig.patch.set_alpha(0)
 
     # Save figure as png for web app
     fig.savefig('/home/ColbyKid/capstoneProject/static/all_lstm', format='png')

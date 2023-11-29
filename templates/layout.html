@@ -6,25 +6,20 @@
     <link rel="shortcut icon" href="#" />
   </head>
 
-    <div>
+  <body style="background-color:#b1cced;">
       <link href="./static/style.css" rel="stylesheet" />
-      <div class="main-container">
         <div class="main-hero">
           <div class="left-block">
             <h1 class="left-title">Stock Price Predictor</h1>
             <span class="left-description">
               This tool is a basic stock predictor, using historical data
               from the last two years to form an LSTM Model for three selected companies.
-              More information regarding the machine learning principles that were used
-              can be found by following the link below.
+              More information regarding the specifics of the application can be found
+              to the right or the Github repository can be found at the link below.
             </span>
-            <button type="button" onClick="window.open('/info', '_self'); "  class="learn-more-button">
-              Learn More...
+            <button type="button" onClick="window.open('https://github.com/cwklein/LSTM-PriceForecasting', '_blank'); "  class="standard-button">
+              Github Repository
             </button>
-            <h1 class="left-filler">
-              <span>Try It Out!</span>
-              <br />
-            </h1>
             <form method="get" class="company-form" action="{{ url_for('company_page') }}">
               <select required class="company-select" id="company" name="company-select">
                 <option value="None" selected disabled hidden>Select a company..</option>
@@ -38,7 +33,6 @@
             {% block content %}
             {% endblock %}
         </div>
-      </div>
-    </div>
+  </body>
 
 </html>
