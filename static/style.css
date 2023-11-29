@@ -98,7 +98,7 @@
 }
 .right-block {
   width: 60%;
-  height: auto;
+  height: 100%;
   display: flex;
   position: relative;
   align-items: center;
@@ -112,14 +112,14 @@
   object-fit: cover;
 }
 .right-title {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0rem;
   text-decoration: underline;
 }
 .right-sub-block {
   flex: 0 0 auto;
   width: auto;
-  height: 100px;
+  height: auto;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -183,11 +183,14 @@
 .right-sub-center {
   flex: 1;
   width: 80%;
-  height: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 20px #83aad6;
+  background-color: #ccddf0;
+  padding: 1% 1% 2% 1%;
+  border-radius: 35px;
 }
 @media(max-width: 991px) {
   .main-hero {
