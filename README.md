@@ -1,7 +1,7 @@
 # capstoneProject
-# Colby Klein - 001198444
+# Colby Klein
 
-<h1> C964 - Capstone Project - Colby Klein - 001198444 </h1>
+<h1> Capstone Project</h1>
 
 <h2> Description </h2>
 <p>
