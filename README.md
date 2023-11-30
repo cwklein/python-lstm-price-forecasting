@@ -1,4 +1,3 @@
-# capstoneProject
 # Colby Klein
 
 <h1> Capstone Project</h1>
